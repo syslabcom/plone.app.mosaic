@@ -339,7 +339,7 @@ define([
     $.mosaic.options.toolbar = $(".mosaic-toolbar");
 
     // Init toolbar
-    $.mosaic.options.toolbar.mosaicToolbar();
+    // $.mosaic.options.toolbar.mosaicToolbar();
 
     // Init layout
     $.mosaic.options.panels.mosaicLayout();
@@ -390,14 +390,14 @@ define([
     $.mosaic.undo.init();
 
     // on enabling, add class, disable toolbar classes, hide toolbar
-    $('.pat-toolbar').hide();
+    // $('.pat-toolbar').hide();
     var $body = $('body');
     $body.addClass('mosaic-enabled');
-    $body[0].className.split(' ').forEach(function(className){
-      if(className.indexOf('plone-toolbar') !== -1){
-        $body.removeClass(className);
-      }
-    });
+    // $body[0].className.split(' ').forEach(function(className){
+    //   if(className.indexOf('plone-toolbar') !== -1){
+    //     $body.removeClass(className);
+    //   }
+    // });
 
     $.mosaic.initialized();
   };
