@@ -275,6 +275,14 @@ define([
         }
       }
     }
+
+    // Always customize the layout
+    $.mosaic.setSelectedContentLayout('');
+    $('.mosaic-panel .mosaic-tile', $.mosaic.document).each(function(){
+        var tile = new Tile(this);
+        tile.makeMovable();
+        tile.$el.mosaicAddDrag();
+    });
   };
 
   $.mosaic.getSelectedContentLayout = function(){
