@@ -495,14 +495,14 @@ define([
       // Add settings icon
       if (tile_config && tile_config.settings &&
             this.$el.hasClass('mosaic-read-only-tile') === false) {
-        _addButton('Edit', 'settings', this.settingsClicked.bind(this));
+        _addButton('Bearbeiten', 'settings', this.settingsClicked.bind(this));
       }
 
       if(!$.mosaic.hasContentLayout){
-        _addButton('Delete', 'delete', this.deleteClicked.bind(this));
-        var confirmBtn = _addButton('Confirm delete', 'confirm', this.confirmClicked.bind(this));
+        _addButton('Löschen', 'delete', this.deleteClicked.bind(this));
+        var confirmBtn = _addButton('Löschen bestätigen', 'confirm', this.confirmClicked.bind(this));
         $(confirmBtn).hide();
-        var btn = _addButton('Cancel', 'cancel', this.cancelClicked.bind(this));
+        var btn = _addButton('Abbrechen', 'cancel', this.cancelClicked.bind(this));
         $(btn).hide();
       }
 

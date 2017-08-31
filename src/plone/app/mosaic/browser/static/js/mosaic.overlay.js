@@ -124,7 +124,7 @@ define([
       $(".mosaic-overlay .pattern-modal-buttons").append(
         $(document.createElement("input")).attr({
           'type': 'button',
-          'value': 'Done'
+          'value': 'Sichern'
         })
         .addClass('mosaic-overlay-ok-button plone-btn plone-btn-primary')
         .click(function () {
