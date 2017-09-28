@@ -136,7 +136,7 @@ define([
         $.mosaic.overlay.close();
       });
 
-      $(".mosaic-overlay .plone-modal-header h2").html('Properties');
+      $(".mosaic-overlay .plone-modal-header h2").html('Eigenschaften');
     }
 
     if (mode === 'all' && $.mosaic.overlay_hide_fields) {
